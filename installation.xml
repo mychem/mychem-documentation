@@ -37,9 +37,9 @@
     <title>How to Obtain Mychem</title>
 
     <para>At this time, Mychem is only available as a source package that you
-    need to compile. You can also get the last snapshot directly from the SVN
-    trunk (this version can be unstable). It is planned to release binaries
-    will the version 1.0 of Mychem.</para>
+    need to compile. You can also get the last snapshot directly from the GIT
+    repository (take care, this version can be unstable). It is planned to
+    release binaries will the version 1.0 of Mychem.</para>
 
     <sect2 id="source_package">
       <title>Source Package</title>
@@ -49,14 +49,13 @@
       Homepage</ulink> hosted by SourceForge.</para>
     </sect2>
 
-    <sect2 id="svn_trunk">
-      <title>SVN Trunk</title>
+    <sect2 id="git_repository">
+      <title>GIT Repository</title>
 
-      <para>The last development version of Mychem can be obtained by using
-      anonymous SVN. In case you are using a command line interface, follow
-      this step:</para>
+      <para>The last development version of Mychem can be obtained by cloning
+      the <ulink url="http://github.com/mychem/mychem-code">GIT repository</ulink>. In case you are using a command line interface, follow this step:</para>
 
-      <programlisting><prompt># </prompt><userinput>svn co https://mychem.svn.sourceforge.net/svnroot/mychem/mychem3 mychem</userinput>
+      <programlisting><prompt># </prompt><userinput>git clone https://github.com/mychem/mychem-code.git</userinput>
 </programlisting>
     </sect2>
   </sect1>
@@ -249,7 +248,7 @@
 
         <screen>-- Test module enabled </screen>
 
-        <para>The program use the <emphasis>mysql<emphasis> database for
+        <para>The program use the <emphasis>mysql</emphasis> database for
          testing. If the <emphasis>user</emphasis> do not have access to this
          database, it is possible to set the name of the database by using the
          -DMY_DB option.</para>
