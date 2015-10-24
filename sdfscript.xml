@@ -4,15 +4,19 @@
 "/usr/share/xml/docbook/schema/dtd/4.3/docbookx.dtd">
 -->
 <appendix id="sdfscript">
+
   <title>Loading MDL SDFFile with Python</title>
 
-  <para>This appendix presents a Python script for loading a MDL SDF file into
-  a MySQL database. The script requires the MySQLdb Python module. It can be
-  downloaded from the <ulink
-  url="http://mysql-python.sourceforge.net/">Mysql-Python Project Web
-  Page</ulink>.</para>
+  <para>
+    This appendix presents a Python script for loading a MDL SDF file
+    into a MySQL database. The script requires the MySQLdb Python
+    module. It can be downloaded from the
+    <ulink
+  url="http://mysql-python.sourceforge.net/">Mysql-Python
+    Project Web Page</ulink>.
+  </para>
 
-  <programlisting>#!/bin/python
+<programlisting>#!/bin/python
 
 import sys
 import MySQLdb
@@ -91,4 +95,5 @@ link.close()
 
 print str(molCount) + " structures have been loaded."
 </programlisting>
+
 </appendix>
