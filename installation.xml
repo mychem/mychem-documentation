@@ -82,8 +82,8 @@
         interface, follow this step:
       </para>
 
-<programlisting><prompt># </prompt><userinput>git clone https://github.com/mychem/mychem-code.git</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>git clone https://github.com/mychem/mychem-code.git</userinput>
+</screen>
 
     </sect2>
 
@@ -201,8 +201,8 @@
               For the tar gzipped archive:
             </para>
 
-<programlisting><prompt># </prompt><userinput>tar -xfzv mychem-0.9.2.tar.gz</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>tar -xfzv mychem-0.9.2.tar.gz</userinput>
+</screen>
           </listitem>
 
           <listitem>
@@ -210,8 +210,8 @@
               For the zip archive:
             </para>
 
-<programlisting><prompt># </prompt><userinput>unzip mychem-0.9.2.zip</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>unzip mychem-0.9.2.zip</userinput>
+</screen>
           </listitem>
 
         </itemizedlist>
@@ -231,11 +231,11 @@
               In source build:
             </para>
 
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
 <prompt># </prompt><userinput>cmake .</userinput>
 <prompt># </prompt><userinput>make</userinput>
 <prompt># </prompt><userinput>make install</userinput>
-</programlisting>
+</screen>
           </listitem>
 
           <listitem>
@@ -243,14 +243,14 @@
               Build out-of-source (recommended):
             </para>
 
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake ..</userinput>
 <prompt># </prompt><userinput>make</userinput>
 <prompt># </prompt><userinput>make install</userinput>
 <prompt># </prompt><userinput>cd ..</userinput>
-</programlisting>
+</screen>
           </listitem>
 
         </itemizedlist>
@@ -281,8 +281,8 @@
               For Unix-like systems (Linux, BSD, Mac OS X):
             </para>
 
-<programlisting><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb.sql</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb.sql</userinput>
+</screen>
           </listitem>
 
           <listitem>
@@ -290,9 +290,8 @@
               For Microsoft Windows systems:
             </para>
 
-<programlisting>
-              <prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb_win32.sql</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb_win32.sql</userinput>
+</screen>
           </listitem>
 
         </itemizedlist>
@@ -309,9 +308,9 @@
           the path of the installation directory:
         </para>
 
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem/build</userinput>
+<screen><prompt># </prompt><userinput>cd /path/to/mychem/build</userinput>
 <prompt># </prompt><userinput>cmake -DCMAKE_INSTALL_PREFIX=/convenient/path ..</userinput>
-</programlisting>
+</screen>
 
         <para>
           If you want to have more details about the compilation
@@ -319,8 +318,8 @@
           <command>make</command> command:
         </para>
 
-<programlisting><prompt># </prompt><userinput>make VERBOSE=1</userinput>
-</programlisting>
+<screen><prompt># </prompt><userinput>make VERBOSE=1</userinput>
+</screen>
 
       </sect3>
 
@@ -335,14 +334,14 @@
           out-of-source and enables testing.
         </para>
 
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake -DMY_HOST=localhost -DMY_USER=user -DMY_PASSWD=passwd ..</userinput>
 <prompt># </prompt><userinput>make</userinput>
 <prompt># </prompt><userinput>make install</userinput>
 <prompt># </prompt><userinput>cd ..</userinput>
-</programlisting>
+</screen>
 
         <para>
           When running the command <command>cmake -DMY_HOST=localhost
@@ -350,7 +349,8 @@
           the following line in the status message:
         </para>
 
-<screen>-- Test module enabled </screen>
+<screen>-- Test module enabled
+</screen>
 
         <para>
           The program use the <emphasis>mysql</emphasis> database for
@@ -386,11 +386,23 @@
           test</command>. You should see the following results:
         </para>
 
-<screen>Running tests... Start processing tests Test project
-        /path/to/mychem/build 1/ 5 Testing ConversionTest Passed 2/ 5 Testing
-        HelperTest Passed 3/ 5 Testing ModificationTest Passed 4/ 5 Testing
-        MolmatchTest Passed 5/ 5 Testing PropertyTest Passed 100% tests
-        passed, 0 tests failed out of 5 </screen>
+<screen>Running tests...
+Test project /home/jerome/git/pansanel/mychem-code/build
+    Start 1: ConversionTest
+1/5 Test #1: ConversionTest ...................   Passed    0.18 sec
+    Start 2: HelperTest
+2/5 Test #2: HelperTest .......................   Passed    0.00 sec
+    Start 3: ModificationTest
+3/5 Test #3: ModificationTest .................   Passed    0.01 sec
+    Start 4: MolmatchTest
+4/5 Test #4: MolmatchTest .....................   Passed    0.04 sec
+    Start 5: PropertyTest
+5/5 Test #5: PropertyTest .....................   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.27 sec
+</screen>
 
         <para>
           The <filename>LastTest.log</filename> contains more details
@@ -417,10 +429,11 @@
               If CMake returns the following error:
             </para>
 
-<programlisting>CMake Error: This project requires some variables
-            to be set, and cmake can not find them. Please set the following
-            variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
-            (ADVANCED)</programlisting>
+<screen>CMake Error: This project requires some variables
+to be set, and cmake can not find them. Please set the following
+variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
+(ADVANCED)
+</screen>
 
             <para>
               It means that CMake did not find Open Babel. If you know
@@ -428,10 +441,10 @@
               it to CMake with:
             </para>
 
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2/build</userinput>
+<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2/build</userinput>
 <prompt># </prompt><userinput>cmake -DOPENBABEL2_INCLUDE_DIR=/path/to/openbabel/include \
 -DOPENBABEL2_LIBRARIES=/path/to/library ..</userinput>
-</programlisting>
+</screen>
           </listitem>
 
         </itemizedlist>
@@ -839,9 +852,9 @@
       To generate this documentation, use the following commands:
     </para>
 
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2</userinput>
 <prompt># </prompt><userinput>doxygen Doxyfile</userinput>
-</programlisting>
+</screen>
 
     <para>
       The API documentation can be read using a web browser at the
