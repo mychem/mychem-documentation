@@ -81,17 +81,10 @@
         repository</ulink>. In case you are using a command line
         interface, follow this step:
       </para>
-<<<<<<< HEAD
 
 <screen><prompt># </prompt><userinput>git clone https://github.com/mychem/mychem-code.git</userinput>
 </screen>
 
-=======
-
-<programlisting><prompt># </prompt><userinput>git clone https://github.com/mychem/mychem-code.git</userinput>
-</programlisting>
-
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
     </sect2>
 
   </sect1>
@@ -120,13 +113,7 @@
 
       <listitem>
         <para>
-<<<<<<< HEAD
           <application>CMake</application> version 2.6.0 or higher.
-=======
-          <application>CMake</application>
-
-          version 2.6.0 or higher.
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
         </para>
 
         <para>
@@ -140,13 +127,7 @@
 
       <listitem>
         <para>
-<<<<<<< HEAD
           <application>MySQL</application> version 4.0 or higher.
-=======
-          <application>MySQL</application>
-
-          version 4.0 or higher.
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
         </para>
 
         <para>
@@ -162,20 +143,11 @@
 
       <listitem>
         <para>
-<<<<<<< HEAD
           <application>Open Babel</application> version 2.3.0 or any
           later version. The compilation of Mychem requires also the
           openbabel header. For MS Windows, they are provided with the
           source package. For Linux, install the libopenbabel-dev
           package.
-=======
-          <application>Open Babel</application>
-
-          version 2.3.0 or any later version. The compilation of Mychem
-          requires also the openbabel header. For MS Windows, they are
-          provided with the source package. For Linux, install the
-          libopenbabel-dev package.
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
         </para>
 
         <para>
@@ -229,13 +201,8 @@
               For the tar gzipped archive:
             </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>tar -xfzv mychem-0.9.2.tar.gz</userinput>
 </screen>
-=======
-<programlisting><prompt># </prompt><userinput>tar -xfzv mychem-0.9.2.tar.gz</userinput>
-</programlisting>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
           </listitem>
 
           <listitem>
@@ -243,13 +210,8 @@
               For the zip archive:
             </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>unzip mychem-0.9.2.zip</userinput>
 </screen>
-=======
-<programlisting><prompt># </prompt><userinput>unzip mychem-0.9.2.zip</userinput>
-</programlisting>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
           </listitem>
 
         </itemizedlist>
@@ -269,11 +231,7 @@
               In source build:
             </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>cmake .</userinput>
 <prompt># </prompt><userinput>make</userinput>
 <prompt># </prompt><userinput>make install</userinput>
@@ -285,11 +243,7 @@
               Build out-of-source (recommended):
             </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake ..</userinput>
@@ -320,30 +274,6 @@
           with the following command:
         </para>
 
-<<<<<<< HEAD
-        <itemizedlist>
-
-          <listitem>
-            <para>
-              For Unix-like systems (Linux, BSD, Mac OS X):
-            </para>
-
-<screen><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb.sql</userinput>
-</screen>
-          </listitem>
-
-          <listitem>
-            <para>
-              For Microsoft Windows systems:
-            </para>
-
-<screen><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb_win32.sql</userinput>
-</screen>
-          </listitem>
-
-        </itemizedlist>
-
-=======
 <screen><prompt># </prompt><userinput>mysql -u user -p &lt; src/mychemdb.sql</userinput>
 </screen>
 
@@ -355,7 +285,6 @@
           </para>
         </note>
 
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
       </sect3>
 
       <sect3 id="linux_customized_installation">
@@ -368,11 +297,7 @@
           the path of the installation directory:
         </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd /path/to/mychem/build</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem/build</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>cmake -DCMAKE_INSTALL_PREFIX=/convenient/path ..</userinput>
 </screen>
 
@@ -382,21 +307,9 @@
           <command>make</command> command:
         </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>make VERBOSE=1</userinput>
 </screen>
 
-=======
-        <para>
-          If you want to have more details about the compilation
-          process, use the following option for the
-          <command>make</command> command:
-        </para>
-
-<programlisting><prompt># </prompt><userinput>make VERBOSE=1</userinput>
-</programlisting>
-
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
       </sect3>
 
       <sect3 id="linux_tests">
@@ -410,11 +323,7 @@
           out-of-source and enables testing.
         </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake -DMY_HOST=localhost -DMY_USER=user -DMY_PASSWD=passwd ..</userinput>
@@ -429,12 +338,7 @@
           the following line in the status message:
         </para>
 
-<<<<<<< HEAD
-<screen>-- Test module enabled
-</screen>
-=======
 <screen>-- Test module enabled </screen>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 
         <para>
           The program use the <emphasis>mysql</emphasis> database for
@@ -445,14 +349,7 @@
 
         <note>
           <para>
-<<<<<<< HEAD
             If the user can access <application>MySQL</application>
-=======
-            If the user can access
-
-            <application>MySQL</application>
-
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
             without a password, then you do not need to set the
             <option>MY_PASSWD</option> parameter. The two other
             parameters ( <option>MY_HOST</option> and
@@ -478,15 +375,9 @@
         </para>
 
 <screen>Running tests...
-<<<<<<< HEAD
-Test project /home/jerome/git/pansanel/mychem-code/build
-    Start 1: ConversionTest
-1/5 Test #1: ConversionTest ...................   Passed    0.18 sec
-=======
 Test project mychem-code/build
     Start 1: ConversionTest
 1/5 Test #1: ConversionTest ...................   Passed    0.05 sec
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
     Start 2: HelperTest
 2/5 Test #2: HelperTest .......................   Passed    0.00 sec
     Start 3: ModificationTest
@@ -498,20 +389,12 @@ Test project mychem-code/build
 
 100% tests passed, 0 tests failed out of 5
 
-<<<<<<< HEAD
-Total Test time (real) =   0.27 sec
-</screen>
-
-        <para>
-          The <filename>LastTest.log</filename> contains more details
-=======
 Total Test time (real) =   0.14 sec
 </screen>
 
         <para>
-          The <filename>LastTest.log</filename> file contains more details
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
-          about the test results. It can be found in the
+          The <filename>LastTest.log</filename> file contains more
+          details about the test results. It can be found in the
           <filename
         class="directory">/path/to/mychem/build/Testing/Temporary</filename>
           directory.
@@ -528,7 +411,6 @@ Total Test time (real) =   0.14 sec
         </para>
 
         <itemizedlist>
-<<<<<<< HEAD
 
           <listitem>
             <para>
@@ -540,18 +422,6 @@ to be set, and cmake can not find them. Please set the following
 variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
 (ADVANCED)
 </screen>
-=======
-
-          <listitem>
-            <para>
-              If CMake returns the following error:
-            </para>
-
-<programlisting>CMake Error: This project requires some variables
-            to be set, and cmake can not find them. Please set the following
-            variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
-            (ADVANCED)</programlisting>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 
             <para>
               It means that CMake did not find Open Babel. If you know
@@ -559,11 +429,7 @@ variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
               it to CMake with:
             </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2/build</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2/build</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>cmake -DOPENBABEL2_INCLUDE_DIR=/path/to/openbabel/include \
 -DOPENBABEL2_LIBRARIES=/path/to/library ..</userinput>
 </screen>
@@ -580,19 +446,11 @@ variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
       <title>Installing Mychem on Mac OS X</title>
 
       <para>
-<<<<<<< HEAD
-        The installation of Mychem on Mac OS X is similar to the
-        installation on GNU/Linux. The main differences are the
-        parameter values for CMake. The following table shows common
-        values for the CMake parameters. Note that these values can be
-        different on your system.
-=======
         The installation on Mac OS X differs slightly from an
         installation on GNU/linux. First, you have to set some
         parameters for CMake. The following list shows common values
         used when compiling Mychem on Mac OS X. Note that these values
         may differ on your system.
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
       </para>
 
       <variablelist>
@@ -649,8 +507,6 @@ variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
 
       </variablelist>
 
-<<<<<<< HEAD
-=======
       <para>
         Once the library is installed, the SQL functions are created
         with the following command:
@@ -694,10 +550,10 @@ libmychem.dylib:
 Password:
 /usr/local/mysql-5.5.24-osx10.6-x86_64/lib/libmysqlclient.18.dylib
 <prompt># </prompt><userinput>sudo install_name_tool -change libmysqlclient.18.dylib \
- /usr/local/mysql-5.5.24-osx10.6-x86_64/lib/libmysqlclient.18.dylib libmychem.dylib</userinput>
+ /usr/local/mysql-5.5.24-osx10.6-x86_64/lib/libmysqlclient.18.dylib \
+ libmychem.dylib</userinput>
 </screen>
 
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
     </sect2>
 
     <sect2 id="win32_installation">
@@ -714,21 +570,9 @@ Password:
         <title>Installation using Microsoft Visual Studio Express 2005</title>
 
         <para>
-<<<<<<< HEAD
           You can compile <application>Mychem</application> with
           <application>Microsoft Visual C++ 2005 Express
           Edition</application> (
-=======
-          You can compile
-
-          <application>Mychem</application>
-
-          with
-
-          <application>Microsoft Visual C++ 2005 Express Edition</application>
-
-          (
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 
           <acronym>MSVC++</acronym>
 
@@ -893,14 +737,7 @@ Password:
           Files\MySQL\MySQL Server X.Y\include</filename> and
           <filename>C:\Program Files\MySQL\MySQL Server
           X.Y\opt\libmysql.lib</filename>, where X.Y is the version of
-<<<<<<< HEAD
-          <application>MySQL</application>.
-=======
-
-          <application>MySQL</application>
-
-          .
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
+          <application>MySQL</application> .
         </para>
 
         <para>
@@ -1021,16 +858,8 @@ Password:
         </para>
 
         <para>
-<<<<<<< HEAD
           At last, restart <application>MySQL</application> and run the
           win32 SQL script
-=======
-          At last, restart
-
-          <application>MySQL</application>
-
-          and run the win32 SQL script
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
           <filename>/path/to/mychem/src/mychemdb_win32.sql</filename>.
         </para>
 
@@ -1058,11 +887,7 @@ Password:
       To generate this documentation, use the following commands:
     </para>
 
-<<<<<<< HEAD
 <screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2</userinput>
-=======
-<programlisting><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2</userinput>
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
 <prompt># </prompt><userinput>doxygen Doxyfile</userinput>
 </screen>
 
@@ -1072,15 +897,6 @@ Password:
       <filename>file:///path/to/mychem-0.9.2/doc/api/index.html</filename>
     </para>
 
-<<<<<<< HEAD
-=======
-    <para>
-      The API documentation can be read using a web browser at the
-      following url:
-      <filename>file:///path/to/mychem-0.9.2/doc/api/index.html</filename>
-    </para>
-
->>>>>>> 8585aaaeb18d2248ba96ce67c0f485f2ae6a3706
   </sect1>
 
 </appendix>
