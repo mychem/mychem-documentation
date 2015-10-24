@@ -61,9 +61,9 @@ ERROR 2013 (HY000): Lost connection to MySQL server during query
     </para>
 
 <programlisting>/usr/lib/openbabel/* m,
-/usr/lib/openbabel/2.2.3/* m,
+/usr/lib/openbabel/2.3.2/* m,
 /usr/share/openbabel/* r,
-/usr/share/openbabel/2.2.3/* r,
+/usr/share/openbabel/2.3.2/* r,
 </programlisting>
 
   </sect1>
