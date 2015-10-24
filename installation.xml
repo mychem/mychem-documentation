@@ -279,9 +279,9 @@
 
         <note>
           <para>
-            On Mac OS X and Windows, the sql file that need to be loaded
-            is different. It is described in the section related to Mac
-            OS X or Windows installation in this documentation.
+            On Mac OS X and Windows, another SQL file is used instead
+            of the <filename>src/mychemdb.sql</filename> file. The name
+            of this file is detailed in the corresponding OS section.
           </para>
         </note>
 
@@ -338,7 +338,8 @@
           the following line in the status message:
         </para>
 
-<screen>-- Test module enabled </screen>
+<screen>-- Test module enabled
+</screen>
 
         <para>
           The program use the <emphasis>mysql</emphasis> database for
@@ -737,7 +738,7 @@ Password:
           Files\MySQL\MySQL Server X.Y\include</filename> and
           <filename>C:\Program Files\MySQL\MySQL Server
           X.Y\opt\libmysql.lib</filename>, where X.Y is the version of
-          <application>MySQL</application> .
+          <application>MySQL</application>.
         </para>
 
         <para>
@@ -852,7 +853,7 @@ Password:
           <filename>C:/path/to/openbabel/windows-vc2005/OpenBabelDLL/Debug/OpenBabelDLLD.dll</filename>
           DLL file and all DLL files founded into the
           <filename
-        class="directory">openbabel-2.2.3/windows-vc2005</filename>
+        class="directory">openbabel-2.3.2/windows-vc2005</filename>
           directory to the MySQL
           <filename class="directory">bin</filename> directory.
         </para>
