@@ -35,22 +35,22 @@
 
     <copyright>
 
-      <year>2009-2014</year>
+      <year>2015</year>
 
       <holder>CNRS</holder>
 
     </copyright>
 
-    <date>12 Sep 2014</date>
+    <date>26 Oct 2015</date>
 
-    <releaseinfo>0.9.2</releaseinfo>
+    <releaseinfo>0.9.3</releaseinfo>
 
     <abstract>
 
       <para>
         The Mychem Handbook is a documentation for the Mychem software.
         The Mychem software provides a set of functions for handling
-        chemical data within MySQL. Mychem v0.9.2 is based on Open Babel
+        chemical data within MySQL. Mychem v0.9.3 is based on Open Babel
         version 2.3.0 (or any later version).
       </para>
 
