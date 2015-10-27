@@ -889,13 +889,14 @@ Password:
     </para>
 
 <screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.3</userinput>
+<prompt># </prompt><userinput>mkdir api</userinput>
 <prompt># </prompt><userinput>doxygen Doxyfile</userinput>
 </screen>
 
     <para>
       The API documentation can be read using a web browser at the
       following url:
-      <filename>file:///path/to/mychem-0.9.3/doc/api/index.html</filename>
+      <filename>file:///path/to/mychem-0.9.3/api/index.html</filename>
     </para>
 
   </sect1>
