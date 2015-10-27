@@ -1,8 +1,7 @@
 # Mychem Documentation
-The Mychem documentation is based on DocBook. The last version is available onlie at [Mychem documentation](https://sourceforge.net/projects/mychem/files/documentation/). You can also generate yourself the PDF or HTML version of the documentation with the following instructions.
+The Mychem documentation is based on DocBook. The last version is available online at [Mychem documentation](https://sourceforge.net/projects/mychem/files/documentation/). You can also generate yourself the PDF or HTML version of the documentation with the following instructions.
 
 ## PDF
-    git clone https://github/mychem/mychem-documentation
     xsltproc \
     --stringparam use.extensions 0 \
     --stringparam paper.type A4 \
@@ -17,7 +16,6 @@ The Mychem documentation is based on DocBook. The last version is available onli
     fop -fo mychem.fo -pdf mychem.pdf
 
 ## HTML
-    git clone https://github/mychem/mychem-documentation
     xsltproc \
     --stringparam use.extensions 0 \
     --stringparam paper.type A4 \
