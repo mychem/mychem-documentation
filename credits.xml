@@ -117,6 +117,16 @@
           </para>
 
           <para>
+            For comments and bug fixes
+          </para>
+        </listitem>
+
+        <listitem>
+          <para>
+            Hans de Winter
+          </para>
+
+          <para>
             For debugging and tests on Mac OS X.
           </para>
         </listitem>
@@ -132,7 +142,7 @@
     <title>Copyright</title>
 
     <para>
-      Mychem is Copyright © 2009-2014 CNRS
+      Mychem is Copyright © 2009-2015 CNRS
     </para>
 
   </sect1>

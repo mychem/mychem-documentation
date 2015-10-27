@@ -201,7 +201,7 @@
               For the tar gzipped archive:
             </para>
 
-<screen><prompt># </prompt><userinput>tar -xfzv mychem-0.9.2.tar.gz</userinput>
+<screen><prompt># </prompt><userinput>tar -xfzv mychem-0.9.3.tar.gz</userinput>
 </screen>
           </listitem>
 
@@ -210,7 +210,7 @@
               For the zip archive:
             </para>
 
-<screen><prompt># </prompt><userinput>unzip mychem-0.9.2.zip</userinput>
+<screen><prompt># </prompt><userinput>unzip mychem-0.9.3.zip</userinput>
 </screen>
           </listitem>
 
@@ -231,7 +231,7 @@
               In source build:
             </para>
 
-<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.3</userinput>
 <prompt># </prompt><userinput>cmake .</userinput>
 <prompt># </prompt><userinput>make</userinput>
 <prompt># </prompt><userinput>make install</userinput>
@@ -243,7 +243,7 @@
               Build out-of-source (recommended):
             </para>
 
-<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.3</userinput>
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake ..</userinput>
@@ -323,7 +323,7 @@
           out-of-source and enables testing.
         </para>
 
-<screen><prompt># </prompt><userinput>cd mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd mychem-0.9.3</userinput>
 <prompt># </prompt><userinput>mkdir build</userinput>
 <prompt># </prompt><userinput>cd build</userinput>
 <prompt># </prompt><userinput>cmake -DMY_HOST=localhost -DMY_USER=user -DMY_PASSWD=passwd ..</userinput>
@@ -430,7 +430,7 @@ variables: OPENBABEL2_INCLUDE_DIR (ADVANCED) OPENBABEL2_LIBRARIES
               it to CMake with:
             </para>
 
-<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2/build</userinput>
+<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.3/build</userinput>
 <prompt># </prompt><userinput>cmake -DOPENBABEL2_INCLUDE_DIR=/path/to/openbabel/include \
 -DOPENBABEL2_LIBRARIES=/path/to/library ..</userinput>
 </screen>
@@ -538,7 +538,7 @@ ERROR 1126 (HY000) at line 10: Can't open shared library 'libmychem.dylib'
 <screen><prompt># </prompt><userinput>otool -L libmychem.dylib</userinput>
 libmychem.dylib:
         /usr/local/lib/libmychem.0.dylib (compatibility version 0.0.0, current
-        version 0.9.2)
+        version 0.9.3)
         /usr/local/lib/libopenbabel.4.dylib (compatibility version 4.0.0,
         current version 4.0.1)
         libmysqlclient.18.dylib (compatibility version 18.0.0, current version
@@ -877,7 +877,7 @@ Password:
     <para>
       API documentation is available on the
       <ulink
-    url="http://mychem.sourceforge.net/doc/api/html/index.html">
+    url="http://mychem.sourceforge.net/api/index.html">
       Mychem website</ulink>.
     </para>
 
@@ -888,14 +888,15 @@ Password:
       To generate this documentation, use the following commands:
     </para>
 
-<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.2</userinput>
+<screen><prompt># </prompt><userinput>cd /path/to/mychem-0.9.3</userinput>
+<prompt># </prompt><userinput>mkdir api</userinput>
 <prompt># </prompt><userinput>doxygen Doxyfile</userinput>
 </screen>
 
     <para>
       The API documentation can be read using a web browser at the
       following url:
-      <filename>file:///path/to/mychem-0.9.2/doc/api/index.html</filename>
+      <filename>file:///path/to/mychem-0.9.3/api/html/index.html</filename>
     </para>
 
   </sect1>

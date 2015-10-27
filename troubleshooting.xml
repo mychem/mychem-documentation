@@ -31,9 +31,9 @@
         when using the SMILES_TO_MOLECULE function.
       </para>
 
-<programlisting><prompt>mysql&gt; </prompt>SELECT SMILES_TO_MOLECULE('CCOCC');
+<screen><prompt>mysql&gt; </prompt><userinput>SELECT SMILES_TO_MOLECULE('CCOCC');</userinput>
 ERROR 2013 (HY000): Lost connection to MySQL server during query
-</programlisting>
+</screen>
 
       <para>
         This problem has been observed with version of Mychem earlier to
@@ -61,10 +61,17 @@ ERROR 2013 (HY000): Lost connection to MySQL server during query
     </para>
 
 <programlisting>/usr/lib/openbabel/* m,
-/usr/lib/openbabel/2.3.2/* m,
+/usr/lib/openbabel/<replaceable>OPENBABEL_VERSION</replaceable>/* m,
 /usr/share/openbabel/* r,
-/usr/share/openbabel/2.3.2/* r,
+/usr/share/openbabel/<replaceable>OPENBABEL_VERSION</replaceable>/* r,
 </programlisting>
+
+    <note>
+      <para>
+        Replace <replaceable>OPENBABEL_VERSION</replaceable> by the
+        version of OpenBabel on your system (2.3.0, 2.3.1, ...).
+      </para>
+    </note>
 
   </sect1>
 
@@ -75,8 +82,8 @@ ERROR 2013 (HY000): Lost connection to MySQL server during query
     <para>
       If you encounter an error not listed here, please report it on our
       <ulink
-    url="http://sourceforge.net/tracker/?group_id=195099&amp;atid=952081">
-      bug tracking system</ulink>.
+    url="https://github.com/mychem/mychem-code/issues"> bug
+      tracking system</ulink>.
     </para>
 
   </sect1>

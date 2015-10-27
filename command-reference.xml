@@ -823,7 +823,7 @@ M  END
         </para>
 
 <screen><prompt>mysql&gt; </prompt><userinput>SELECT MYCHEM_VERSION();</userinput>
-        -&gt; 0.9.2
+        -&gt; 0.9.3
 </screen>
       </listitem>
 
@@ -839,7 +839,7 @@ M  END
         </para>
 
 <screen><prompt>mysql&gt; </prompt><userinput>SELECT OPENBABEL_VERSION();</userinput>
-        -&gt; 2.3.0
+        -&gt; 2.3.2
 </screen>
       </listitem>
 
