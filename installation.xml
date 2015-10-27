@@ -896,7 +896,7 @@ Password:
     <para>
       The API documentation can be read using a web browser at the
       following url:
-      <filename>file:///path/to/mychem-0.9.3/api/index.html</filename>
+      <filename>file:///path/to/mychem-0.9.3/api/html/index.html</filename>
     </para>
 
   </sect1>
