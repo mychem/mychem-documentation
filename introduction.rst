@@ -38,4 +38,4 @@ chemical data. It is an open, collaborative project allowing anyone to
 search, convert, analyze, or store data from molecular modeling,
 chemistry, solid-state materials, biochemistry, or related areas. You
 can find more informations about Open Babel on the `Open Babel
-website <http://openbabel.sourceforge.net/wiki/Main_Page>`_.
+website <https://openbabel.org>`_.
